@@ -1,0 +1,132 @@
+/* Banner */
+
+.banner__container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f2f2f2;
+  width: 100%;
+  box-shadow: 0 9px 13px rgba(0, 0, 0, 0.1);
+}
+
+.banner__text__container {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.banner__text__style {
+  color: var(--secondary-color);
+}
+
+.banner__link__style {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.banner__close__icon {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.banner__close__icon:hover {
+  transform: rotate(180deg);
+}
+
+.gallery__heading__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.gallery__heading {
+  margin: 0;
+  font-size: var(--heading-size);
+}
+
+.gallery__tab__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__tabs {
+  margin: 0 20px;
+  border: 2px solid #343434;
+  padding: 15px;
+  border-radius: 5px;
+  width: 125px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.gallery__selected_tab {
+  background-color: #343434;
+  color: #fff;
+}
+
+.event__reminder__text {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.event__date__style {
+  color: var(--secondary-color);
+}
+
+/* Subscription message */
+.subscription__message {
+  padding: 10px;
+}
+
+.subscription__message__container {
+  text-align: center;
+}
+
+.subscription__message__heading {
+  font-size: var(--secondary-heading);
+}
+
+.subscription__message__text {
+  font-size: 1.1rem;
+}
+
+/* Alt message */
+.altmessage__container {
+  text-align: center;
+  margin: 70px 0;
+  font-size: 1.5rem;
+}
+
+.altmessage__text {
+  padding: 0px 10px 30px 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .banner__close__icon {
+    top: 45px;
+  }
+
+  .gallery__tabs {
+    margin: 0 8px;
+  }
+
+  .subscription__message__heading {
+    font-size: var(--secondary-heading-mobile);
+  }
+}

@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+
+* *::before *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #343434;
+  --secondary-color: #a98e00;
+  --heading-size: 3.5rem;
+  --secondary-heading: 3rem;
+  --heading-size-mobile: 3rem;
+  --secondary-heading-mobile: 2.5rem;
+  --modal-heading: 2rem;
+  --input-width: 400px;
+  --input-width-mobile: 350px;
+  --input-height: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+}
+
+/* Styled link */
+.styled__link {
+  position: relative;
+  color: inherit;
+}
+
+.styled__link:focus-within {
+  text-decoration: none;
+}
+
+.styled__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.styled__link:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.text__underline {
+  border-bottom: 5px solid var(--secondary-color);
+  padding-bottom: 2px;
+}
+
+.text__decorate__secondary {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+/* React masonry css */
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  width: auto;
+  margin: 40px 20px 0 20px;
+  margin-bottom: 0;
+}
+.my-masonry-grid_column {
+  padding: 0 15px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
+
+.loader__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal */
+.modal__style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Forms */
+.message__form__container {
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  padding: 40px 40px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 23px 50px rgba(0, 0, 0, 0.3);
+}
+
+.close__icon {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+  color: #aaaaaa;
+  transition: transform 0.3s;
+}
+
+.close__icon:hover {
+  transform: rotate(180deg);
+  color: var(--primary-color);
+}
+
+.close__icon__alt {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  background: var(--secondary-color);
+}
+
+.esc__icon {
+  position: absolute;
+  font-size: 1rem;
+  top: 45px;
+  right: 15px;
+}
+
+.esc__icon__alt {
+  position: absolute;
+  font-size: 1rem;
+  top: 55px;
+  right: 20px;
+}
+
+.message__form__heading {
+  font-size: var(--modal-heading);
+  text-align: center;
+}
+
+.message__form__input {
+  width: var(--input-width);
+  height: var(--input-height);
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: white;
+  padding: 5px 5px 5px 8px;
+}
+
+.message__form__input__normal {
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+.message__form__input__error {
+  border: 1px solid hsl(335, 90%, 51%);
+}
+
+.message__form__textarea {
+  width: var(--input-width);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  background-color: white;
+  font-family: "Poppins";
+  margin: 15px 0;
+  padding: 5px 5px 5px 8px;
+}
+
+.message__form__textarea__normal {
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+.message__form__textarea__error {
+  border: 1px solid hsl(335, 90%, 51%);
+}
+
+.message__form__textarea:focus,
+.message__form__input:focus {
+  outline: none;
+  border: 2px solid hsl(36, 63%, 48%);
+}
+
+.input__error {
+  font-size: 0.8rem;
+  color: hsl(335, 90%, 51%);
+}
+
+.message__button__container {
+  padding: 5px;
+}
+
+.message__button {
+  width: var(--input-width);
+  height: 50px;
+  border: none;
+  background-color: #b4846c;
+  color: #ffffff;
+  margin-top: 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.message__button:hover {
+  background-color: #7d5a50;
+}
+
+.message__button:focus {
+  outline: none;
+}
+
+/* Generic */
+
+.logo__style {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  animation-name: logo-animation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.home__style {
+  position: absolute;
+  right: 0;
+  padding-top: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__link {
+  color: hsl(0, 5%, 8%);
+}
+
+.home__icon {
+  font-size: 2rem;
+}
+
+@keyframes logo-animation {
+  from {
+    transform: translateY(-100vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.unstyled__link {
+  text-decoration: none;
+}
+
+.images__in__modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .message__form__container {
+    padding: 20px 25px;
+  }
+
+  .close__icon__alt {
+    top: 20px;
+    right: 10px;
+  }
+
+  .esc__icon,
+  .esc__icon__alt {
+    display: none;
+  }
+
+  .message__form__input,
+  .message__form__textarea,
+  .message__button {
+    width: var(--input-width-mobile);
+  }
+
+  .home__style {
+    padding-top: 30px;
+  }
+}
