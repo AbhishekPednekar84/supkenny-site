@@ -6,7 +6,7 @@ import axios from "axios";
 import MessageHeadLayout from "../components/head/MessageHeadLayout";
 import MessageList from "../components/messages/MessageList";
 
-const messages = (props) => {
+const messages = () => {
   return (
     <MessageHeadLayout>
       <div className={styles.messages__container}>
@@ -18,24 +18,6 @@ const messages = (props) => {
       </div>
     </MessageHeadLayout>
   );
-};
-
-export const getServerSideProps = async () => {
-  const res = await axios.get(
-    `${process.env.NEXT_PUBLIC_API_URL}/messages/all`
-  );
-
-  if (!res.data) {
-    return {
-      notFound: true,
-    };
-  }
-
-  return {
-    props: {
-      messages: res.data || null,
-    },
-  };
 };
 
 export default messages;

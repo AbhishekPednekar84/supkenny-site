@@ -2,7 +2,7 @@
 .landing {
   max-height: 100vh;
   padding-bottom: 65px;
-  background-image: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624729403/gallery/site_images/landing/landing__bg_ieuuda.jpg");
+  background-image: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624732029/gallery/site_images/landing/landing__bg_aaqix8.jpg");
   background-size: cover;
 }
 
@@ -42,7 +42,8 @@
 .landing__text {
   text-align: center;
   background: hsla(0, 0%, 100%, 0.6);
-  padding: 25px;
+  padding: 20px;
+  padding-top: 0;
 }
 
 .landing__text h1 {
@@ -55,7 +56,6 @@
   text-transform: uppercase;
   font-size: 1.75rem;
   font-weight: 600;
-  padding: 20px 0;
 }
 
 .landing__text__days {
@@ -87,7 +87,7 @@
 .landing__navigation__icon {
   position: absolute;
   left: 50%;
-  bottom: 1%;
+  bottom: 0;
   font-size: 2rem;
   color: var(--primary-color);
   animation-name: navigation-icon-animation;
@@ -306,11 +306,11 @@
 @media only screen and (max-width: 900px) {
   /* Landing page */
   .landing {
-    max-height: 90vh;
+    max-height: 88vh;
   }
 
   .landing__container {
-    height: 90vh;
+    height: 88vh;
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 55px;
@@ -353,7 +353,7 @@
   }
 
   .landing__navigation__icon {
-    bottom: 70px;
+    bottom: 20px;
   }
 
   /* Our story */
