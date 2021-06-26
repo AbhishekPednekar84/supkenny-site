@@ -1,7 +1,7 @@
 /* Container */
 .messages__container {
   text-align: center;
-  background: url("/images/messages/message__bg.jpg");
+  background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624724159/gallery/site_images/messages/message__bg_akxy8v.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

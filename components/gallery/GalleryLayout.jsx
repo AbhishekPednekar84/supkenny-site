@@ -70,7 +70,7 @@ const GalleryLayout = ({ images }) => {
           <div className="images__in__modal">
             <img
               src={images && images[selectedImage].secure_url}
-              alt={`image-${selectedImage}`}
+              alt="enlarged-image"
               height={images && images[selectedImage].height / 1.8}
               width={images && images[selectedImage].width / 1.8}
             />

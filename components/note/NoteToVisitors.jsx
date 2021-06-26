@@ -28,7 +28,7 @@ const NoteToVisitors = ({ styles }) => {
             </span>
           </a>
         </Link>
-        . We promise to read them all!
+        . We promise to read and cherish every single one!
       </div>
     </div>
   );

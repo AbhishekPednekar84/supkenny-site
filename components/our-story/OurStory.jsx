@@ -24,7 +24,7 @@ const OurStory = ({ styles }) => {
         </div>
         <div className={styles.ourstory__paragraph__image}>
           <Image
-            src="/images/our-story/ourstory__1.jpeg"
+            src="https://res.cloudinary.com/dqgiewxxc/image/upload/v1624724056/gallery/site_images/our-story/ourstory__1_rug7wu.jpg"
             height={500}
             width={550}
           />
