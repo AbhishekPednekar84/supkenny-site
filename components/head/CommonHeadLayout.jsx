@@ -103,7 +103,10 @@ const CommonHeadLayout = () => {
       <meta name="msapplication-TileColor" content="#fff7de" />
       <meta name="theme-color" content="#ffffff" />
 
-      <meta property="og:image" content={process.env.NEXT_PUBLIC_SITE_ICON} />
+      <meta
+        property="og:image"
+        content="https://res.cloudinary.com/dqgiewxxc/image/upload/v1624727705/gallery/site_images/logo_fxpc2f.png"
+      />
       <meta property="og:image:width" content="256" />
       <meta property="og:image:height" content="256" />
       <link

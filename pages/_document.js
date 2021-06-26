@@ -21,7 +21,7 @@ class MyDocument extends Document {
           <div
             id="wcb"
             class="carbonbadge"
-            style={{ backgroundColor: "#f3ecd899" }}
+            style={{ backgroundColor: "#f3ecd899", paddingBottom: "20px" }}
           ></div>
         </body>
       </Html>
