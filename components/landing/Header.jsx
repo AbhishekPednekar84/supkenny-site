@@ -19,7 +19,7 @@ const Header = ({ styles }) => {
         <div className={styles.landing__container}>
           <div className={styles.landing__image}>
             <img
-              src="https://res.cloudinary.com/dqgiewxxc/image/upload/v1624723553/gallery/site_images/landing/cover_liqvom.png"
+              src="https://res.cloudinary.com/dqgiewxxc/image/upload/v1624729172/gallery/site_images/landing/cover-min_yyix4z.png"
               alt="Suparna & Kenny"
               height="650px"
               width="420px"
