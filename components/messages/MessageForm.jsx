@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faExclamationTriangle,
   faTimes,
+  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 
 const validationSchema = Yup.object({
@@ -72,6 +73,12 @@ const MessageForm = ({ styles, setOpenModal }) => {
           <Form id="message__form" autoComplete="off">
             <div>
               <h2 className="message__form__heading">Post Your Message</h2>
+              <div className="no__spam">
+                <FontAwesomeIcon icon={faHeart} />
+                &nbsp; We ask for your email to send a thank you note. <br />
+                <span className="no__spam__highlight">NO SPAM</span>, we
+                promise!
+              </div>
               <div>
                 <Field
                   name="name"

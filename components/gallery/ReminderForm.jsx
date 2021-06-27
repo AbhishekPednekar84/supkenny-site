@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faExclamationTriangle,
   faTimes,
+  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 
 const validationSchema = Yup.object({
@@ -87,7 +88,13 @@ const ReminderForm = ({ styles, openModal, setOpenModal }) => {
                 <Form id="message__form" autoComplete="off">
                   <div>
                     <h2 className="message__form__heading">Set Reminder</h2>
-
+                    <div className="no__spam">
+                      <FontAwesomeIcon icon={faHeart} />
+                      &nbsp; Your email will only be used to send a reminder.{" "}
+                      <br />
+                      <span className="no__spam__highlight">NO SPAM</span>, we
+                      promise!
+                    </div>
                     <div>
                       <Field
                         name="email"

@@ -158,6 +158,19 @@ body {
 .message__form__heading {
   font-size: var(--modal-heading);
   text-align: center;
+  margin-bottom: 0;
+}
+
+.no__spam {
+  padding: 20px 0;
+  text-align: center;
+  color: hsl(335, 90%, 51%);
+  font-size: 0.8rem;
+}
+
+.no__spam__highlight {
+  font-weight: bold;
+  border-bottom: 2px solid currentColor;
 }
 
 .message__form__input {
@@ -316,6 +329,10 @@ body {
   .esc__icon,
   .esc__icon__alt {
     display: none;
+  }
+
+  .no__spam {
+    font-size: 0.7rem;
   }
 
   .message__form__input,
