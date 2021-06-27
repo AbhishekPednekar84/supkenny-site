@@ -32,12 +32,24 @@ const MessageList = ({ styles }) => {
         openModal={openModal}
         setOpenModal={setOpenModal}
       />
+
+      {messages && messages.length === 0 && (
+        <div className={styles.no__messages__container}>
+          <div className={styles.no__messages__text__container}>
+            <p className={styles.no__messages__text}>No messages yet!</p>
+            <p className={styles.no__messages__text__secondary}>
+              You can get that ball rolling...
+            </p>
+          </div>
+        </div>
+      )}
       <Masonry
         breakpointCols={breakpoints}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
         {messages &&
+          messages.length !== 0 &&
           messages.map((message, index) => {
             return (
               <div key={index} className={styles.sender__message__container}>

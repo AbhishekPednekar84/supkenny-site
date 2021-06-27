@@ -4,6 +4,7 @@
   background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624724159/gallery/site_images/messages/message__bg_akxy8v.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 80vh;
 }
 
 .messages__heading__container {
@@ -40,6 +41,30 @@
 
 .add__message__button__text {
   font-size: 2.2rem;
+}
+
+/* No messages */
+.no__messages__container {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no__messages__text__container {
+  background: hsla(0, 0%, 100%, 0.541);
+  padding: 10px;
+}
+
+.no__messages__text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.no__messages__text__secondary {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Messages form */
@@ -192,7 +217,17 @@
   font-size: 1.1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .no__messages__container {
+    min-height: 300;
+  }
+}
+
 @media only screen and (max-width: 900px) {
+  .messages__container {
+    height: 100vh;
+  }
+
   .messages__heading {
     width: 400px;
     font-size: var(--heading-size-mobile);
@@ -210,5 +245,9 @@
   .message__form__textarea,
   .message__button {
     width: var(--input-width-mobile);
+  }
+
+  .no__messages__container {
+    min-height: 300;
   }
 }

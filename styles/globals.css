@@ -14,8 +14,8 @@
   --secondary-heading-mobile: 2.5rem;
   --modal-heading: 2rem;
   --input-width: 400px;
-  --input-width-mobile: 350px;
-  --input-height: 50px;
+  --input-width-mobile: 275px;
+  --input-height: 45px;
 }
 
 html {
@@ -168,6 +168,8 @@ body {
   margin: 15px 0;
   background-color: white;
   padding: 5px 5px 5px 8px;
+  border-color: #343434;
+  -webkit-appearance: none;
 }
 
 .message__form__input__normal {
@@ -186,6 +188,7 @@ body {
   font-family: "Poppins";
   margin: 15px 0;
   padding: 5px 5px 5px 8px;
+  -webkit-appearance: none;
 }
 
 .message__form__textarea__normal {
@@ -289,9 +292,20 @@ body {
   margin: 100px 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .message__form__input,
+  .message__form__textarea {
+    font-size: 0.9rem;
+  }
+
+  .message__button {
+    margin-top: 20px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .message__form__container {
-    padding: 20px 25px;
+    padding: 20px 20px;
   }
 
   .close__icon__alt {

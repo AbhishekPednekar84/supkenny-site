@@ -117,13 +117,37 @@
   padding: 0px 10px 30px 10px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+  .banner__text__container {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
   .banner__close__icon {
-    top: 45px;
+    top: 30px;
   }
 
   .gallery__tabs {
-    margin: 0 8px;
+    margin: 0 5px;
+    padding: 8px;
+    width: 100px;
+    letter-spacing: 1.1px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .banner__close__icon {
+    top: 30px;
+  }
+
+  .gallery__tabs {
+    margin: 0 6px;
+    padding: 10px;
+    width: 100px;
+    letter-spacing: 1.1px;
+    font-size: 1rem;
   }
 
   .subscription__message__heading {
