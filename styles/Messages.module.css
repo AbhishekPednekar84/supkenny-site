@@ -4,7 +4,7 @@
   background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624724159/gallery/site_images/messages/message__bg_akxy8v.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 80vh;
+  padding-bottom: 20px;
 }
 
 .messages__heading__container {
@@ -225,7 +225,6 @@
 
 @media only screen and (max-width: 900px) {
   .messages__container {
-    height: 100vh;
   }
 
   .messages__heading {

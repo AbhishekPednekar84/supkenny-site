@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
+import Image from "next/image";
 import SiteContext from "../../context/siteContext";
 import Modal from "react-modal";
 import Masonry from "react-masonry-css";
@@ -19,11 +20,21 @@ const breakpoints = {
 const MessageList = ({ styles }) => {
   const [openModal, setOpenModal] = useState(false);
   const siteContext = useContext(SiteContext);
-  const { getAllMessages, loading, messages, messageCreated } = siteContext;
+  const { getAllMessages, loading, setLoading, messages, messageCreated } =
+    siteContext;
 
   useEffect(() => {
+    setLoading();
     getAllMessages();
   }, []);
+
+  // if (loading) {
+  //   return (
+  //     <div className="loader__container">
+  //       <Image src="/loader.svg" alt="Loading..." height={100} width={100} />
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>
