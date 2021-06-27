@@ -2,7 +2,7 @@
 .landing {
   max-height: 100vh;
   padding-bottom: 65px;
-  background-image: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624732029/gallery/site_images/landing/landing__bg_aaqix8.jpg");
+  background-image: url("https://res.cloudinary.com/dqgiewxxc/image/upload/f_auto,q_auto/v1624814586/gallery/site_images/landing/landing__bg_n2nfiq.jpg");
   background-size: cover;
 }
 
@@ -146,7 +146,9 @@
 .venue__container {
   min-height: 100vh;
   min-width: 100%;
-  background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624723553/gallery/site_images/landing/venue__bg_qlatj9.jpg");
+  background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/f_auto,q_auto/v1624814586/gallery/site_images/landing/venue_bg_toq4u1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .venue__header {
@@ -201,19 +203,19 @@
 }
 
 .venue__card__mehendi {
-  background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624723552/gallery/site_images/landing/venue__mehendi_relrk6.png");
+  background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/f_auto,q_auto/v1624814048/gallery/site_images/landing/venue__mehendi_yqxc4q.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .venue__card__wedding {
-  background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624723552/gallery/site_images/landing/venue__wedding_s2wehx.png");
+  background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/f_auto,q_auto/v1624814048/gallery/site_images/landing/venue__wedding_ffcqbz.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .venue__card__reception {
-  background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/v1624723552/gallery/site_images/landing/venue__wedding_s2wehx.png");
+  background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/f_auto,q_auto/v1624814048/gallery/site_images/landing/venue__reception_uxqjgu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -105,7 +105,7 @@ const CommonHeadLayout = () => {
 
       <meta
         property="og:image"
-        content="https://res.cloudinary.com/dqgiewxxc/image/upload/v1624727705/gallery/site_images/logo_fxpc2f.png"
+        content="https://res.cloudinary.com/dqgiewxxc/image/upload/f_auto,q_auto/v1624727705/gallery/site_images/logo_fxpc2f.png"
       />
       <meta property="og:image:width" content="256" />
       <meta property="og:image:height" content="256" />
