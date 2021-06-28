@@ -319,6 +319,10 @@
   .venue__card {
     padding: 20px;
   }
+
+  .footer__secondary__text {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -418,5 +422,9 @@
 
   .venue__card__text {
     font-size: 1.2rem;
+  }
+
+  .footer__secondary__text {
+    font-size: 0.9rem;
   }
 }
