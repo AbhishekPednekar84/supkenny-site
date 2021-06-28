@@ -327,6 +327,15 @@ body {
   font-size: 1.5rem;
 }
 
+/* 404 */
+.notfound__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 80px 20px;
+}
+
 @media only screen and (max-width: 600px) {
   .message__form__input,
   .message__form__textarea {
@@ -336,11 +345,21 @@ body {
   .message__button {
     margin-top: 20px;
   }
+
+  /* 404 */
+  .notfound__container {
+    padding: 50px 20px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
   .message__form__container {
     padding: 20px 20px;
+  }
+
+  /* 404 */
+  .notfound__container {
+    padding: 50px 20px;
   }
 
   .close__icon__alt {
