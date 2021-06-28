@@ -161,10 +161,10 @@ const ReminderForm = ({ styles, openModal, setOpenModal }) => {
                     Woohoo!
                   </h2>
                   <Image
-                    src="/images/gallery/sadhya.png"
+                    src="https://res.cloudinary.com/dqgiewxxc/image/upload/c_scale,f_auto,q_auto,w_200/v1624855376/gallery/site_images/subscription/sadhya_rz3upi.png"
                     alt="Subscription"
-                    height={256}
-                    width={256}
+                    height={200}
+                    width={200}
                   />
                   <p className={styles.subscription__message__text}>
                     {subscriptionMessage.message}
@@ -179,7 +179,7 @@ const ReminderForm = ({ styles, openModal, setOpenModal }) => {
                     Hey there!
                   </h2>
                   <Image
-                    src="/images/gallery/thumbs.png"
+                    src="https://res.cloudinary.com/dqgiewxxc/image/upload/c_scale,f_auto,q_auto,w_200/v1624855376/gallery/site_images/subscription/thumbs_q44ck2.png"
                     alt="Subscription"
                     height={200}
                     width={200}
