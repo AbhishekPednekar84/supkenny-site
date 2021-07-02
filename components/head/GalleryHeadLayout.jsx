@@ -10,14 +10,14 @@ const GalleryHeadLayout = (props) => {
         <title>Suparna & Kenny | Photo Gallery</title>
         <meta
           name="description"
-          content="The photo gallery from all the events - haldi, the wedding and the reception. The link to the live stream will be posted here as well."
+          content="The photo gallery from all the events - mehendi, the wedding and the reception. The link to the live stream will be posted here as well."
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Suparna & Kenny | Photo Gallery" />
         <meta
           property="og:description"
-          content="The photo gallery from all the events - haldi, the wedding and the reception. The link to the live stream will be posted here as well."
+          content="The photo gallery from all the events - mehendi, the wedding and the reception. The link to the live stream will be posted here as well."
         />
         <meta property="og:url" content="https://supkenny.site/gallery" />
         <meta property="og:site_name" content="supkenny.site" />
