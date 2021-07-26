@@ -61,9 +61,9 @@ const Venue = ({ styles }) => {
             <p
               className={`${styles.venue__card__text} ${styles.venue__card__text__spacer}`}
             >
-              Sunday, 23rd August 2021
+              Monday, 23rd August 2021
             </p>
-            <p className={styles.venue__card__text}>5PM IST onwards</p>
+            <p className={styles.venue__card__text}>5 PM IST onwards</p>
           </div>
         </div>
       </div>
