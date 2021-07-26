@@ -88,7 +88,6 @@
   position: absolute;
   left: 50%;
   bottom: 0;
-  font-size: 2rem;
   color: var(--primary-color);
   animation-name: navigation-icon-animation;
   animation-duration: 1.5s;

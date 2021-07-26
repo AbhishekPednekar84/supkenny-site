@@ -48,7 +48,7 @@ const Venue = ({ styles }) => {
                 23rd August 2021
               </span>
             </p>
-            <p className={styles.venue__card__text}>11 AM IST onwards</p>
+            <p className={styles.venue__card__text}>11:45 AM to 12:15 PM IST</p>
           </div>
         </div>
         <div

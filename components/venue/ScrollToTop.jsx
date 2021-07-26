@@ -42,7 +42,11 @@ const ScrollToTop = () => {
           window.scroll({ top: 0, left: 0, behavior: "smooth" });
         }}
       >
-        <FontAwesomeIcon icon={faArrowUp} className="scrolltotop" />
+        <FontAwesomeIcon
+          icon={faArrowUp}
+          className="scrolltotop"
+          style={{ fontSize: "1.5rem" }}
+        />
       </motion.div>
     );
   else {

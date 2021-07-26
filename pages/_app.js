@@ -5,6 +5,7 @@ import smoothScroll from "smoothscroll-polyfill";
 // CSS import
 import "../styles/globals.css";
 import styles from "../styles/Home.module.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 // Component imports
 import Logo from "../components/generic/Logo";

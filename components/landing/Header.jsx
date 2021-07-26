@@ -84,6 +84,7 @@ const Header = ({ styles }) => {
               <FontAwesomeIcon
                 icon={faChevronCircleDown}
                 className={styles.landing__navigation__icon}
+                style={{ fontSize: "2rem" }}
               />
             </a>
           </Link>
