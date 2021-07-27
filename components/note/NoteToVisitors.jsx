@@ -7,8 +7,23 @@ const NoteToVisitors = ({ styles }) => {
       <div className={styles.note__text}>
         Dear all, we understand that most of you will be unable to grace our
         special day in person due to the current restriction on the number of
-        allowed guests. However, we will have a{" "}
-        <span className="text__decorate__secondary">live stream</span> and a{" "}
+        allowed guests. We will have a live stream for the{" "}
+        <Link href="https://youtu.be/EdiEUnJvWU4" passHref={true}>
+          <a className="unstyled__link" target="_blank">
+            <span className="text__decorate__secondary styled__link">
+              Wedding
+            </span>
+          </a>
+        </Link>{" "}
+        & the{" "}
+        <Link href="https://youtu.be/HplPwykix6g" passHref={true}>
+          <a className="unstyled__link" target="_blank">
+            <span className="text__decorate__secondary styled__link">
+              Reception
+            </span>
+          </a>
+        </Link>{" "}
+        and a{" "}
         <Link href="/gallery">
           <a className="unstyled__link">
             <span className="text__decorate__secondary styled__link">

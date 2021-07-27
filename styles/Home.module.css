@@ -87,7 +87,7 @@
 .landing__navigation__icon {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 30px;
   color: var(--primary-color);
   animation-name: navigation-icon-animation;
   animation-duration: 1.5s;
@@ -327,11 +327,11 @@
 @media only screen and (max-width: 900px) {
   /* Landing page */
   .landing {
-    max-height: 88vh;
+    max-height: 90vh;
   }
 
   .landing__container {
-    height: 88vh;
+    height: 90vh;
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 55px;
@@ -371,10 +371,6 @@
 
   .landing__image {
     display: none;
-  }
-
-  .landing__navigation__icon {
-    bottom: 20px;
   }
 
   /* Our story */
