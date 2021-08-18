@@ -26,7 +26,7 @@ const HaldiGallery = ({ styles }) => {
   return (
     <div>
       {images && images.resources && images.resources.length !== 0 ? (
-        <GalleryLayout images={images && images.resources} />
+        <GalleryLayout images={images && images.resources} styles={styles} />
       ) : (
         <AltGalleryMessage
           styles={styles}

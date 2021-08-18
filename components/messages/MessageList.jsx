@@ -46,12 +46,13 @@ const MessageList = ({ styles }) => {
 
       {messages && messages.length === 0 && (
         <div className={styles.no__messages__container}>
-          <div className={styles.no__messages__text__container}>
+          {/* <div className={styles.no__messages__text__container}>
             <p className={styles.no__messages__text}>No messages yet!</p>
             <p className={styles.no__messages__text__secondary}>
               You can get that ball rolling...
             </p>
-          </div>
+          </div> */}
+          <Image src="/loader.svg" alt="Loading..." height={60} width={60} />
         </div>
       )}
       <Masonry

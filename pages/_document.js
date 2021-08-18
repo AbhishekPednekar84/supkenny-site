@@ -10,15 +10,15 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script
+          {/* <script
             src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
             defer
-          ></script>
+          ></script> */}
         </Head>
         <body>
           <Main />
           <NextScript />
-          <div
+          {/* <div
             id="wcb"
             class="carbonbadge"
             style={{
@@ -26,7 +26,7 @@ class MyDocument extends Document {
               paddingTop: "5px",
               paddingBottom: "20px",
             }}
-          ></div>
+          ></div> */}
         </body>
       </Html>
     );

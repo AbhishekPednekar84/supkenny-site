@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Masonry from "react-masonry-css";
 import Modal from "react-modal";
+import ImageCarousel from "./ImageCarousel";
+import { motion } from "framer-motion";
 
 // Fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,9 +16,16 @@ const breakpoints = {
   500: 1,
 };
 
-const GalleryLayout = ({ images }) => {
+Modal.setAppElement("#__next");
+
+const variants = {
+  tap: { y: "2px" },
+};
+
+const GalleryLayout = ({ images, styles }) => {
   const [openModal, setOpenModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(0);
+  const [showImages, setShowImages] = useState(1);
 
   const handleClick = (index) => {
     setOpenModal(true);
@@ -31,15 +40,15 @@ const GalleryLayout = ({ images }) => {
         columnClassName="my-masonry-grid_column"
       >
         {images &&
-          images.map((image, index) => (
+          images.slice(0, showImages).map((image, index) => (
             <div
-              key={index}
+              key={image.assetId}
               onClick={() => handleClick(index)}
               style={{ cursor: "pointer" }}
             >
               <Image
                 src={image.secure_url}
-                alt={`Image-${index}`}
+                alt="Image from the gallery"
                 height={image.height / 2}
                 width={image.width / 2}
               />
@@ -47,10 +56,23 @@ const GalleryLayout = ({ images }) => {
           ))}
       </Masonry>
 
+      {images.length > showImages && (
+        <div className={styles.load__more__images__button__container}>
+          <motion.button
+            variants={variants}
+            whileTap="tap"
+            onClick={() => setShowImages(showImages + 20)}
+            className={styles.load__more__images__button}
+          >
+            Show More Images
+          </motion.button>
+        </div>
+      )}
+
       <Modal
         style={{
           overlay: {
-            zIndex: 99999,
+            zIndex: 9999,
             opacity: 1,
             backgroundColor: "rgba(255, 255, 255, 0.97)",
           },
@@ -67,13 +89,17 @@ const GalleryLayout = ({ images }) => {
             onClick={() => setOpenModal(false)}
           />
           <span className="esc__icon__alt">ESC</span>
-          <div className="images__in__modal">
+          {/* <div className="images__in__modal">
             <img
               src={images && images[selectedImage].secure_url}
               alt="enlarged-image"
               height={images && images[selectedImage].height / 1.8}
               width={images && images[selectedImage].width / 1.8}
             />
+          </div> */}
+
+          <div>
+            <ImageCarousel images={images} selectedImage={selectedImage} />
           </div>
         </div>
       </Modal>
