@@ -275,7 +275,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 1.2rem;
   font-weight: 500;
   background: #f3ecd899;
@@ -284,7 +284,7 @@
 
 .footer p {
   margin: 0;
-  padding-top: 20px;
+  padding: 10px 0;
 }
 
 .footer__secondary__text {
@@ -317,6 +317,10 @@
 @media only screen and (max-width: 600px) {
   .venue__card {
     padding: 20px;
+  }
+
+  .footer {
+    font-size: 1rem;
   }
 
   .footer__secondary__text {
@@ -417,6 +421,10 @@
 
   .venue__card__text {
     font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 1rem;
   }
 
   .footer__secondary__text {
