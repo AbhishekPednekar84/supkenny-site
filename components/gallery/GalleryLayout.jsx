@@ -25,7 +25,7 @@ const variants = {
 const GalleryLayout = ({ images, styles }) => {
   const [openModal, setOpenModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(0);
-  const [showImages, setShowImages] = useState(1);
+  const [showImages, setShowImages] = useState(20);
 
   const handleClick = (index) => {
     setOpenModal(true);
@@ -75,6 +75,7 @@ const GalleryLayout = ({ images, styles }) => {
             zIndex: 9999,
             opacity: 1,
             backgroundColor: "rgba(255, 255, 255, 0.97)",
+            overflow: "scroll",
           },
         }}
         isOpen={openModal}
