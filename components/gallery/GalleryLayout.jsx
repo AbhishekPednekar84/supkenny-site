@@ -76,6 +76,7 @@ const GalleryLayout = ({ images, styles }) => {
             opacity: 1,
             backgroundColor: "rgba(255, 255, 255, 0.97)",
             overflow: "scroll",
+            maxWidth: "100%",
           },
         }}
         isOpen={openModal}
@@ -83,7 +84,7 @@ const GalleryLayout = ({ images, styles }) => {
         onRequestClose={() => setOpenModal(false)}
         className="modal__style"
       >
-        <div>
+        <div className={styles.carousel__image__container}>
           <FontAwesomeIcon
             icon={faTimes}
             className="close__icon__alt"
@@ -99,9 +100,7 @@ const GalleryLayout = ({ images, styles }) => {
             />
           </div> */}
 
-          <div>
-            <ImageCarousel images={images} selectedImage={selectedImage} />
-          </div>
+          <ImageCarousel images={images} selectedImage={selectedImage} />
         </div>
       </Modal>
     </div>

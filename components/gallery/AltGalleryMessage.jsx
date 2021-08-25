@@ -26,12 +26,14 @@ const AltGalleryMessage = ({ styles, eventDate }) => {
         </span>
       </div>
       <div>
-        <span
-          className={styles.banner__link__style}
-          onClick={() => setOpenModal(true)}
-        >
-          Set a reminder
-        </span>
+        {daysToEvent > 0 && (
+          <span
+            className={styles.banner__link__style}
+            onClick={() => setOpenModal(true)}
+          >
+            Set a reminder
+          </span>
+        )}
       </div>
 
       <ReminderForm

@@ -4,9 +4,7 @@
   background: url("https://res.cloudinary.com/dqgiewxxc/image/upload/f_auto,q_auto/v1624816128/gallery/site_images/messages/message__bg_rg3h0w.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
-  min-width: 100%;
-  max-width: 100%;
+  background-attachment: fixed;
   padding-bottom: 20px;
 }
 
@@ -251,5 +249,12 @@
 
   .no__messages__container {
     min-height: 300;
+  }
+
+  .sender__message__initial {
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
   }
 }

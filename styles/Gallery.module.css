@@ -137,6 +137,11 @@
   padding: 0px 10px 30px 10px;
 }
 
+.carousel__image__container {
+  height: 600px;
+  width: 650px;
+}
+
 @media only screen and (max-width: 600px) {
   .banner__text__container {
     padding: 5px 15px;
@@ -154,6 +159,11 @@
     width: 100px;
     letter-spacing: 1px;
     font-size: 0.9rem;
+  }
+
+  .carousel__image__container {
+    height: 600px;
+    max-width: 650px;
   }
 }
 

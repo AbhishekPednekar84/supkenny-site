@@ -8,26 +8,12 @@ const ImageCarousel = ({ images, selectedImage }) => {
       dynamicHeight
       showStatus={false}
       showArrows={true}
-      autoPlay
-      interval={3000}
       showThumbs={false}
       infiniteLoop
       selectedItem={selectedImage}
     >
       {images.map((image) => {
-        return (
-          <div
-            key={image.assetId}
-            style={{
-              maxWidth: 600,
-              margin: "10px auto",
-              padding: "0 20px",
-              overflow: "hidden",
-            }}
-          >
-            <img src={image.secure_url} alt="Gallery" />
-          </div>
-        );
+        return <img key={image.assetId} src={image.secure_url} alt="Gallery" />;
       })}
     </Carousel>
   );
