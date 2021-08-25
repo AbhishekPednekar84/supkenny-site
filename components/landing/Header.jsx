@@ -75,13 +75,6 @@ const Header = ({ styles }) => {
                     : "days"}
                 </span>
               </p>
-              {daysToWedding < 0 && (
-                <img
-                  src="https://res.cloudinary.com/dqgiewxxc/image/upload/c_scale,f_auto,h_60,q_auto,w_50/v1629910567/gallery/site_images/landing/bouquet_kvpbbc.png"
-                  alt="bouquet"
-                  className={styles.landing__page__bouquet}
-                />
-              )}
             </div>
           </div>
         </div>
