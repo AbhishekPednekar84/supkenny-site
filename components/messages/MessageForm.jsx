@@ -159,7 +159,7 @@ const MessageForm = ({ styles, setOpenModal }) => {
                 >
                   {props.isSubmitting ? (
                     <Image
-                      src="/loader.svg"
+                      src="/gallery/site_images/loader_rmmrqd.svg"
                       alt="Loading..."
                       height={25}
                       width={25}

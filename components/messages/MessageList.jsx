@@ -31,7 +31,7 @@ const MessageList = ({ styles }) => {
   // if (loading) {
   //   return (
   //     <div className="loader__container">
-  //       <Image src="/loader.svg" alt="Loading..." height={100} width={100} />
+  //       <Image src="/gallery/site_images/loader_rmmrqd.svg" alt="Loading..." height={100} width={100} />
   //     </div>
   //   );
   // }
@@ -52,7 +52,12 @@ const MessageList = ({ styles }) => {
               You can get that ball rolling...
             </p>
           </div> */}
-          <Image src="/loader.svg" alt="Loading..." height={60} width={60} />
+          <Image
+            src="/gallery/site_images/loader_rmmrqd.svg"
+            alt="Loading..."
+            height={60}
+            width={60}
+          />
         </div>
       )}
       <Masonry

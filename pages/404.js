@@ -5,7 +5,7 @@ const PageNotFound = () => {
   return (
     <div className="notfound__container">
       <Image
-        src="/images/404/404.svg"
+        src="/gallery/site_images/404_sodjt9.svg"
         alt="Page not found"
         height={400}
         width={500}

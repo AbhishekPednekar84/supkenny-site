@@ -125,7 +125,7 @@ const ReminderForm = ({ styles, openModal, setOpenModal }) => {
                       >
                         {props.isSubmitting ? (
                           <Image
-                            src="/loader.svg"
+                            src="/gallery/site_images/loader_rmmrqd.svg"
                             alt="Loading..."
                             height={25}
                             width={25}
@@ -161,7 +161,7 @@ const ReminderForm = ({ styles, openModal, setOpenModal }) => {
                     Woohoo!
                   </h2>
                   <Image
-                    src="https://res.cloudinary.com/dqgiewxxc/image/upload/c_scale,f_auto,q_auto,w_200/v1624855376/gallery/site_images/subscription/sadhya_rz3upi.png"
+                    src="/gallery/site_images/messages/sadhya_do8c66.png"
                     alt="Subscription"
                     height={200}
                     width={200}
@@ -179,7 +179,7 @@ const ReminderForm = ({ styles, openModal, setOpenModal }) => {
                     Hey there!
                   </h2>
                   <Image
-                    src="https://res.cloudinary.com/dqgiewxxc/image/upload/c_scale,f_auto,q_auto,w_200/v1624855376/gallery/site_images/subscription/thumbs_q44ck2.png"
+                    src="/gallery/site_images/messages/thumbs_hcmvpe.png"
                     alt="Subscription"
                     height={200}
                     width={200}
