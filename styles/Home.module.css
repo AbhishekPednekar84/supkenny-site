@@ -314,6 +314,11 @@
   }
 }
 
+.landing__page__bouquet {
+  margin-top: -30px;
+  transform: rotate(15deg);
+}
+
 @media only screen and (max-width: 600px) {
   .venue__card {
     padding: 20px;

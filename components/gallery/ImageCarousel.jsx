@@ -9,6 +9,7 @@ const ImageCarousel = ({ images, selectedImage }) => {
       showStatus={false}
       showArrows={true}
       showThumbs={false}
+      showIndicators={false}
       infiniteLoop
       selectedItem={selectedImage}
     >
