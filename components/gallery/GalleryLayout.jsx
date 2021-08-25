@@ -47,7 +47,7 @@ const GalleryLayout = ({ images, styles }) => {
               style={{ cursor: "pointer" }}
             >
               <Image
-                src={image.secure_url}
+                src={image.public_id + "." + image.format}
                 alt="Image from the gallery"
                 height={image.height / 2}
                 width={image.width / 2}
