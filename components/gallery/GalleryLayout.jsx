@@ -74,7 +74,7 @@ const GalleryLayout = ({ images, styles }) => {
           overlay: {
             zIndex: 9999,
             opacity: 1,
-            backgroundColor: "rgba(255, 255, 255, 0.97)",
+            backgroundColor: "#343434",
             overflow: "scroll",
             maxWidth: "100%",
           },
@@ -90,7 +90,9 @@ const GalleryLayout = ({ images, styles }) => {
             className="close__icon__alt"
             onClick={() => setOpenModal(false)}
           />
-          <span className="esc__icon__alt">ESC</span>
+          <span className="esc__icon__alt" style={{ color: "#FFF" }}>
+            ESC
+          </span>
           {/* <div className="images__in__modal">
             <img
               src={images && images[selectedImage].secure_url}

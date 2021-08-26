@@ -140,6 +140,8 @@
 .carousel__image__container {
   height: 600px;
   width: 650px;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
