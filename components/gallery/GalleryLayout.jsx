@@ -102,7 +102,11 @@ const GalleryLayout = ({ images, styles }) => {
             />
           </div> */}
 
-          <ImageCarousel images={images} selectedImage={selectedImage} />
+          <ImageCarousel
+            images={images}
+            selectedImage={selectedImage}
+            setOpenModal={setOpenModal}
+          />
         </div>
       </Modal>
     </div>
