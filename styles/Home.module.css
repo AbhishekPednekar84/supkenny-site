@@ -13,7 +13,7 @@
 }
 
 .landing__navlink {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 1px;
@@ -42,8 +42,8 @@
 .landing__text {
   text-align: center;
   background: hsla(0, 0%, 100%, 0.6);
-  padding: 20px;
-  padding-top: 0;
+  padding: 25px;
+  padding-top: 10px;
 }
 
 .landing__text h1 {

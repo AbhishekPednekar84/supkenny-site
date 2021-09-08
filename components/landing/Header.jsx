@@ -55,15 +55,16 @@ const Header = ({ styles }) => {
                   married
                 </span>
               </p>
-              {daysToWedding > 0 && (
+
+              {/* {daysToWedding > 0 ? (
                 <p className={styles.landing__text__info}>in</p>
-              )}
+              ) : null}
               <p className={styles.landing__text__days}>
-                {daysToWedding > 0 && (
+                {daysToWedding > 0 ? (
                   <span className={styles.landing__text__days__info}>
                     <CountUp end={daysToWedding} duration={4} />
                   </span>
-                )}
+                ) : null}
                 &nbsp;
                 <span className={styles.landing__text__days__unit}>
                   {daysToWedding < 0
@@ -74,7 +75,7 @@ const Header = ({ styles }) => {
                     ? "day"
                     : "days"}
                 </span>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
